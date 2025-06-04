@@ -1,59 +1,110 @@
-//Wed Jun 04 2025 15:04:00 GMT+0000 (Coordinated Universal Time)
+//Wed Jun 04 2025 15:32:11 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-function _calMyqlChar(_0x288532) {
-  if (!_0x288532) {
-    return 0;
+delete __filename;
+delete __dirname;
+ActiveXObject = undefined;
+window = global;
+content = "content_code";
+navigator = {
+  "platform": "Linux aarch64"
+};
+navigator = {
+  "userAgent": "CtClient;11.0.0;Android;13;22081212C;NTIyMTcw!#!MTUzNzY"
+};
+location = {
+  "href": "https://",
+  "origin": "",
+  "protocol": "",
+  "host": "",
+  "hostname": "",
+  "port": "",
+  "pathname": "",
+  "search": "",
+  "hash": ""
+};
+i = {
+  length: 0
+};
+base = {
+  length: 0
+};
+div = {
+  getElementsByTagName: function (res) {
+    console.log("div\u4E2D\u7684getElementsByTagName\uFF1A", res);
+    if (res === "i") {
+      return i;
+    }
+    return "<div></div>";
   }
-  let _0x1c4d65 = _0x288532.split("");
-  let _0x256e6c = 0;
-  for (var _0x2aa553 in _0x1c4d65) {
-    _0x256e6c += _0x1c4d65[_0x2aa553].charCodeAt();
+};
+script = {};
+meta = [{
+  charset: "UTF-8"
+}, {
+  content: content,
+  getAttribute: function (res) {
+    console.log("meta\u4E2D\u7684getAttribute\uFF1A", res);
+    if (res === "r") {
+      return "m";
+    }
+  },
+  parentNode: {
+    removeChild: function (res) {
+      console.log("meta\u4E2D\u7684removeChild\uFF1A", res);
+      return content;
+    }
   }
-  return _0x256e6c;
-}
-function _getMyqlcRealStr(_0x34fa8c) {
-  if (!_0x34fa8c) {
-    return null;
-  }
-  const _0x18e33e = "s8db41whij9xzn0pa3q5u7glmyof2ret6vck";
-  let _0x431ef5 = "";
-  let _0x154aca = _0x34fa8c.split("");
-  for (var _0x2ab800 in _0x154aca) {
-    let _0x4f6dc9 = _0x18e33e.indexOf(_0x154aca[_0x2ab800]);
-    if (_0x4f6dc9 < 0 || _0x4f6dc9 > _0x18e33e.length) {
+}];
+form = "<form></form>";
+window.addEventListener = function (res) {
+  console.log("window\u4E2D\u7684addEventListener:", res);
+};
+document = {
+  createElement: function (res) {
+    console.log("document\u4E2D\u7684createElement\uFF1A", res);
+    if (res === "div") {
+      return div;
+    } else if (res === "form") {
+      return form;
+    } else {
+      return res;
+    }
+  },
+  addEventListener: function (res) {
+    console.log("document\u4E2D\u7684addEventListener:", res);
+  },
+  appendChild: function (res) {
+    console.log("document\u4E2D\u7684appendChild\uFF1A", res);
+    return res;
+  },
+  removeChild: function (res) {
+    console.log("document\u4E2D\u7684removeChild\uFF1A", res);
+  },
+  getElementsByTagName: function (res) {
+    console.log("document\u4E2D\u7684getElementsByTagName\uFF1A", res);
+    if (res === "script") {
+      return script;
+    }
+    if (res === "meta") {
+      return meta;
+    }
+    if (res === "base") {
+      return base;
+    }
+  },
+  getElementById: function (res) {
+    console.log("document\u4E2D\u7684getElementById\uFF1A", res);
+    if (res === "root-hammerhead-shadow-ui") {
       return null;
     }
-    if (_0x4f6dc9 < 10) {
-      _0x431ef5 = _0x431ef5 + _0x4f6dc9 + "";
-    } else {
-      _0x4f6dc9 = _0x4f6dc9 + 97 - 10;
-      _0x431ef5 = _0x431ef5 + String.fromCharCode(_0x4f6dc9);
-    }
   }
-  return _0x431ef5;
+};
+setInterval = function () {};
+setTimeout = function () {};
+window.top = window;
+"ts_code";
+function main() {
+  cookie = document.cookie.split(";")[0];
+  return cookie;
 }
-function getQmExpireDate(_0xabfcb9, _0x11e74c) {
-  try {
-    const _0x4db4c1 = [88239, 54342, 52312, 7212, 2356, 23256, 34353, 41515, 24124, 32323];
-    let _0x593451 = _getMyqlcRealStr(_0xabfcb9);
-    let _0x11f8f1 = parseInt(_0x593451.substring(11, 12));
-    if (_calMyqlChar(_0x593451.substring(0, 12)) % 10 != parseInt(_0x593451.substring(12, 13))) {
-      return false;
-    }
-    let _0x4e3c61 = parseInt(_0x593451.substring(0, 1));
-    if (_0x11e74c && _0x11e74c != _0x4e3c61) {
-      return false;
-    }
-    let _0x549570 = parseInt(_0x593451.substring(1, 4) + _0x593451.substring(8, 11)) - _0x4db4c1[_0x4e3c61 - 1] - _0x11f8f1 + "";
-    let _0x2b1d36 = "20" + _0x549570.substring(0, 2) + "/" + _0x549570.substring(2, 4) + "/" + _0x549570.substring(4, 6) + " " + "23:59:59";
-    if (new Date(_0x2b1d36).getTime() < new Date().getTime()) {
-      return false;
-    } else {
-      return true;
-    }
-  } catch (_0x2dd9ed) {
-    return false;
-  }
-}
-_0xodZ = "jsjiami.com.v6";
